@@ -8,8 +8,8 @@ export default function handler(req, res) {
     port: 25,     
     host: "	smtp.sendgrid.net",
     auth: {
-        user: 'next_mailing',
-        pass: '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',
+        user: process.env.NEXT_PUBLIC_USER,
+        pass: process.env.NEXT_PUBLIC_PASS,
       },
     secure: false,
   })
