@@ -5,13 +5,13 @@ export default function handler(req, res) {
   const senderEmail = 'segentor@gmail.com'
   let nodemailer = require('nodemailer')
   const transporter = nodemailer.createTransport({
-    port: 587,     
-    host: "smtp-relay.sendinblue.com",
+    port: 25,     
+    host: "	smtp.sendgrid.net",
     auth: {
-        user: 'segentor@gmail.com',
-        pass: 'Gt6YCUB0b2rFHpI5',
+        user: 'next_mailing',
+        pass: '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',
       },
-    secure: true,
+    secure: false,
   })
 
   const mailData = {
