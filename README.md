@@ -3,7 +3,12 @@
 ![](https://miro.medium.com/max/966/1*OA9c8CovXaqjwbzi_qYKsA.jpeg)
 
 ## Prerequisite
-We should have  `docker desktop` and `docker-composer` installed.
+We should have  `docker desktop` and `docker-compose` installed.
+
+https://docs.docker.com/desktop/install/mac-install/
+
+https://docs.docker.com/compose/install/
+
 
 ## Getting Started
 By using `make` command, we are going to set up the docker develop environment with tow docker containers:
