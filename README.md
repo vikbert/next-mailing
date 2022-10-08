@@ -1,4 +1,6 @@
-# NEXT.js Mailing Demostration
+# NEXT.js Mailing Demo
+
+![](https://miro.medium.com/max/966/1*OA9c8CovXaqjwbzi_qYKsA.jpeg)
 
 ## Getting Started
 
