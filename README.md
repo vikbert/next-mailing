@@ -11,6 +11,13 @@ https://docs.docker.com/compose/install/
 
 
 ## Getting Started
+Now start the dev environment via `docker-compose`
+
+```bash
+make init  ## install npm package in node container
+make dev   ## start node dev server
+```
+
 By using `make` command, we are going to set up the docker develop environment with tow docker containers:
 
 - container: node
@@ -21,12 +28,6 @@ By using `make` command, we are going to set up the docker develop environment w
 > `mailcatcher` container is the SMTP simulation for mailing in local dev environment (port for HTTP: 1080, port for 
 > smtp: 1025)
 
-Now start the dev environment via `docker-compose`
-
-```bash
-make init  ## install npm package in node container
-make dev   ## start node dev server
-```
 
 ## Test the contact form
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
