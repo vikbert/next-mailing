@@ -1,0 +1,28 @@
+version: '3.7'
+
+services:
+    node:
+        image: node:16.17.1-alpine3.15
+        working_dir: /var/www/app
+        volumes:
+            - ./app:/var/www/app
+            - ./app:/bindmount:rw
+        networks:
+            - default
+        depends_on:
+            -   mailcatcher
+        environment: # docker compose exchanges the service name for container IP
+            SMTP_HOST: mailcatcher
+        ports:
+            - "3000:3000"
+
+    mailcatcher:
+        image: jeanberu/mailcatcher:0.8.0
+        networks:
+            - default
+        ports:
+            - 1080:1080
+
+networks:
+    default:
+        driver: bridge

@@ -5,12 +5,9 @@ export default function handler(req, res) {
   const senderEmail = 'segentor@gmail.com'
   let nodemailer = require('nodemailer')
   const transporter = nodemailer.createTransport({
-    port: 25,     
-    host: "	smtp.sendgrid.net",
-    auth: {
-        user: process.env.NEXT_PUBLIC_USER,
-        pass: process.env.NEXT_PUBLIC_PASS,
-      },
+    port: 1025,
+    host: process.env.SMTP_HOST,
+    ignoreTLS: true,
     secure: false,
   })
 
