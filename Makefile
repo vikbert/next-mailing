@@ -6,6 +6,11 @@ help:
 .PHONY: help
 .DEFAULT_GOAL := help
 
+#-- init
+init: ## init node application
+	docker-compose run --rm --service-ports node npm install
+
+
 #-- dev
 dev: ## start the dev server
 	docker-compose up -d
