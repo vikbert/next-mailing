@@ -8,10 +8,6 @@ help:
 
 #-- dev
 dev: ## start the dev server
+	docker-compose up -d
 	docker-compose run --rm --service-ports node npm run dev
-
-#-- node
-npm-clean: ## clean up the npm packages
-	rm -rf app/_frontend/node_modules/*
-	docker-compose run --rm node npm run download
 
