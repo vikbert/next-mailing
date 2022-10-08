@@ -1,5 +1,6 @@
 {
   "name": "next-signature",
+  "license": "proprietary",
   "version": "0.1.0",
   "private": true,
   "scripts": {
