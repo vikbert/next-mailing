@@ -11,6 +11,12 @@ init: ## init node application
 	docker-compose run --rm --service-ports node npm install
 
 
+#-- build
+build: ## build the NEXT application
+	docker-compose run --rm --service-ports node npm run build
+	docker-compose run --rm --service-ports node npm run start
+
+
 #-- dev
 dev: ## start the dev server
 	docker-compose up -d
